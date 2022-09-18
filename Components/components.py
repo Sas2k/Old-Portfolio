@@ -8,32 +8,32 @@ class NavBar(Component):
         <nav class="navbar navbar-expand-lg navColor">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Sasen Perera</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#top">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Socials
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="https://github.com/Sas2k">Github</a></li>
-                            <li><a class="dropdown-item" href="https://twitter.com/Sas8dp">Twitter</a></li>
-                            <li><a class="dropdown-item" href="https://stackoverflow.com/users/17240786/sasen-perera">Stack<strong>OverFlow</strong></a></li>
-                            <li><a class="dropdown-item" href="https://discordapp.com/users/897042859851665438">Discord</a></li>
-                            <li><a class="dropdown-item" href="https://medium.com/@sasenp">Medium</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Socials
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://github.com/Sas2k">Github</a></li>
+                                <li><a class="dropdown-item" href="https://twitter.com/Sas8dp">Twitter</a></li>
+                                <li><a class="dropdown-item" href="https://stackoverflow.com/users/17240786/sasen-perera">Stack<strong>OverFlow</strong></a></li>
+                                <li><a class="dropdown-item" href="https://discordapp.com/users/897042859851665438">Discord</a></li>
+                                <li><a class="dropdown-item" href="https://medium.com/@sasenp">Medium</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

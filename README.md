@@ -10,7 +10,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> My Portfolio built with Python and Lemon
     <br> 
 </p>
 

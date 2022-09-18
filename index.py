@@ -95,4 +95,5 @@ Root.add(
 def home(request, response):
     response.text = Root.render('<App/>')
 
-app.run(host="0.0.0.0")
+# Uncomment this to run the server locally
+# app.run()

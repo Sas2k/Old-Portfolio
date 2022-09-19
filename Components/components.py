@@ -59,7 +59,7 @@ class Projects(Component):
                 <h3>Dis-Code 📩</h3>
                 <p>A Chat application that has a tendency to forget to decrypt the messages</p>
                 <p>Python Discord Code Jam 2022 Top 10</p>
-                <a href="https://github.com/Lucky-Leucrota/cj9-lucky-leucrota>View on Github</a>
+                <a href="https://github.com/Lucky-Leucrota/cj9-lucky-leucrota">View on Github</a>
                 <a href="https://lucky-leucrota.herokuapp.com/">View Deployment</a>
             </div>
             <div class="project">

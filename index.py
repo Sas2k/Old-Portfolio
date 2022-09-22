@@ -64,4 +64,4 @@ def home(request, response):
     response.text = Root.render('<App/>')
 
 # Uncomment this to run the server locally
-app.run()
+# app.run()

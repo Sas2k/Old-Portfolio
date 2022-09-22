@@ -2,7 +2,7 @@ from Lemon.components import Component
 from Lemon.Server.server import Server
 from Lemon.ui.forms import FormControl
 
-from Components.components import NavBar, Projects
+from Components.components import NavBar, Projects, SkillnTools
 
 from random import choice
 
@@ -28,40 +28,7 @@ class App(Component):
         </div>
         <hr>
         <h2>Skills and Tools</h2>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>Jquery</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>FastAPI</li>
-                        <li>NodeJS</li>
-                        <li>Express</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VSCode</li>
-                        <li>Linux</li>
-                        <li>Windows</li>
-                    </ul>
-                </div>
-            </div>
+        <SkillnTools/>
         <hr>
         <h1 id="projects">Projects</h1>
         <h2>Here are some of my projects</h2>
@@ -87,6 +54,7 @@ Root.add(
     App,
     Projects,
     NavBar,
+    SkillnTools,
     FormControl().components
     ]
 )
@@ -96,4 +64,4 @@ def home(request, response):
     response.text = Root.render('<App/>')
 
 # Uncomment this to run the server locally
-# app.run()
+app.run()

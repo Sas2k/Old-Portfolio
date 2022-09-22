@@ -47,6 +47,14 @@ body {
     color: white;
 }
 
+.navbar-toggler-icon {
+    color: white;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
 .dropdown-menu {
     background-color: rgb(255, 115, 0);
 }

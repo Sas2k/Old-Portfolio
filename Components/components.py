@@ -21,6 +21,10 @@ class NavBar(Component):
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://github.com/sas2k/portfolio">View on Github</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Socials
@@ -66,6 +70,59 @@ class Projects(Component):
                 <h3>NumberScript 🔢</h3>
                 <p>Possibly the world's simplest and restricting programming language</p>
                 <a href="https://github.com/Sas2k/NumberScript">View on Github</a>
-            </div> 
+            </div>
+            <div class="project">
+                <h3>Random-XKCder 💬</h3>
+                <p>A simple web app that displays a random XKCD comic</p>
+                <a href="https://github.com/Sas2k/random-xkcder">View on Github</a>
+                <a href="https://random-xkcder.vercel.app">View Deployment</a>
+        </div>
+        """
+
+class SkillnTools(Component):
+    name  = "SkillnTools"
+    
+    def item(props: dict):
+        return """
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Jquery</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>FastAPI</li>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>VSCode</li>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                        <li>Docasaurus</li>
+                        <li>Heroku</li>
+                        <li>MKDocs</li>
+                        <li>Vercel</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         """

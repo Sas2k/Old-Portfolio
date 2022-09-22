@@ -23,7 +23,8 @@ class App(Component):
         <div id="top" class="container-fluid">
             <div class="col-md-12">
                 <h1>👋🏽 Hello!</h1>
-                <h2 class="title">I'm Sasen, {random_skill} from Sri Lanka Slapping some code together</h1>
+                <h2 class="title">I'm Sasen, {random_skill} from Sri Lanka Slapping some code together</h2>
+                <h2>I'm also a top 10 finalist in the Python Discord's Code Jam 9 (2022)</h2>
             </div>
         </div>
         <hr>

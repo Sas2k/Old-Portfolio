@@ -53,6 +53,7 @@ class Projects(Component):
                 <h3>Lemon 🍋</h3>
                 <p>An Experimental Full-Stack Framework built with python (which btw is the framework used for the portfolio)</p>
                 <a href="https://github.com/Sas2k/Lemon">View on Github</a>
+                <a href="https://sas2k.github.io/Lemon/">View Docs</a>
             </div>
             <div class="project">
                 <h3>Zap! ⚡</h3>

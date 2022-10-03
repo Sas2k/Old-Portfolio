@@ -4,8 +4,6 @@ from Lemon.ui.forms import FormControl
 
 from Components.components import NavBar, Projects, SkillnTools
 
-from random import choice
-
 import time
 
 Root = Component("Sasen Perera", "public/css/style.css", "public/js/script.js")
@@ -16,15 +14,22 @@ class App(Component):
 
     def item(props: dict):
         age = time.localtime().tm_year - 2008
-        skills = ["A full-stack developer", "A pythonista", "A programmer", "A chess player", "A Violinist", "A student", f"A {age} year old"]
-        random_skill = choice(skills)
         return f"""
         <NavBar/>
         <div id="top" class="container-fluid">
             <div class="col-md-12">
                 <h1>👋🏽 Hello!</h1>
-                <h2 class="title">I'm Sasen, {random_skill} from Sri Lanka Slapping some code together</h2>
-                <h2>I'm also a top 10 finalist in the Python Discord's Code Jam 9 (2022)</h2>
+                <h2 class="title">I'm Sasen, A hobbyist Full-Stack Dev from Sri Lanka Slapping some code together</h2>
+            </div>
+        </div>
+        <hr>
+        <div id="about" class="container-fluid">
+            <div class="col-md-12">
+                <h2>About Me</h2>
+                <p>I'm a 14 year old hobbyist Full-Stack Developer from Sri Lanka. I'm {age} years old now and I'm still learning new things everyday. I'm also a top 10 finalist in the Python Discord's Code Jam 9 (2022)</p>
+                <h3>Education</h3>
+                <p>I'm currently studying at <a href="https://thurstancollege.net/">Thurstan College</a>.
+                <p>As hobbies, I code, play video games, play the violin 🎻 and some chess</p>
             </div>
         </div>
         <hr>

@@ -9,6 +9,7 @@ import time
 Root = Component("Sasen Perera", "public/css/style.css", "public/js/script.js")
 app = Server(static_dir="public")
 
+
 class App(Component):
     name = "App"
 
@@ -55,19 +56,14 @@ class App(Component):
         </footer>
         """
 
-Root.add(
-    [
-    App,
-    Projects,
-    NavBar,
-    SkillnTools,
-    FormControl().components
-    ]
-)
+
+Root.add([App, Projects, NavBar, SkillnTools, FormControl().components])
+
 
 @app.route("/")
 def home(request, response):
-    response.text = Root.render('<App/>')
+    response.text = Root.render("<App/>")
 
-# Uncomment this to run the server locally
-# app.run()
+
+if __name__ == "__main__":
+    app.run()

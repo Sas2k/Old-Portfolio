@@ -3,3 +3,4 @@ parse
 waitress
 WebOb
 whitenoise
+Black

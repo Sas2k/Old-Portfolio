@@ -1,9 +1,11 @@
 from Lemon.components import Component
 
+
 class NavBar(Component):
     name = "NavBar"
 
     def item(props: dict):
+
         return """
         <nav class="navbar navbar-expand-lg navColor">
             <div class="container-fluid">
@@ -46,10 +48,12 @@ class NavBar(Component):
         </nav>
         """
 
+
 class Projects(Component):
     name = "Projects"
 
     def item(props: dict):
+
         return """
         <div id="projects">
             <div class="project">
@@ -68,7 +72,18 @@ class Projects(Component):
                 <p>A Chat application that has a tendency to forget to decrypt the messages</p>
                 <p>Python Discord Code Jam 2022 Top 10</p>
                 <a href="https://github.com/Lucky-Leucrota/cj9-lucky-leucrota">View on Github</a>
-                <a href="https://lucky-leucrota.herokuapp.com/">View Deployment</a>
+            </div>
+            <div class="project">
+                <h3>SongTrack 📀</h3>
+                <p>A music player that plays my favorite songs</p>
+                <a href="https://github.com/Sas2k/SongTrack">View on Github</a>
+                <a href="https://songtrack.vercel.app">View Deployment</a>
+            </div>
+            <div class="project">
+                <h3>Portfolio 📄</h3>
+                <p>My portfolio website</p>
+                <a href="https://github.com/Sas2k/portfolio">View on Github</a>
+                <a onclick="alert('you're already here!')">View Deployment</a>
             </div>
             <div class="project">
                 <h3>NumberScript 🔢</h3>
@@ -80,13 +95,16 @@ class Projects(Component):
                 <p>A simple web app that displays a random XKCD comic</p>
                 <a href="https://github.com/Sas2k/random-xkcder">View on Github</a>
                 <a href="https://random-xkcder.vercel.app">View Deployment</a>
+            </div>
         </div>
         """
 
+
 class SkillnTools(Component):
-    name  = "SkillnTools"
-    
+    name = "SkillnTools"
+
     def item(props: dict):
+
         return """
         <div class="container-fluid">
             <div class="row">
@@ -129,4 +147,4 @@ class SkillnTools(Component):
                 </div>
             </div>
         </div>
-        """
+    """

@@ -69,7 +69,7 @@ class Projects(Component):
     name = "Projects"
 
     def item(props: dict):
-        projects_dict = loads(open("Components\projects.json", "r").read())["projects"]
+        projects_dict = loads(open("public/projects.json", "r").read())["projects"]
         projects = str()
         x = 0
         for j in projects_dict:

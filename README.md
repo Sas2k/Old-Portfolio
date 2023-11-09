@@ -16,15 +16,16 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Built-Using](#built_using)
-- [Authors](#authors)
+- [📝 Table of Contents](#-table-of-contents)
+- [📕 About ](#-about-)
+- [⛏️ Built Using ](#️-built-using-)
+- [✍️ Authors ](#️-authors-)
 
 ## 📕 About <a name = "about"></a>
 
 Hello, This is my portfolio. Feel Free to check it out!
 
->The app is Deployed on Vercel!
+>The app is Deployed on Vercel!!
 
 https://portfolio-sas2k.vercel.app/
 

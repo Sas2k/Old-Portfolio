@@ -1,5 +1,22 @@
 from Lemon.components import Component
+from json import loads
 
+num2words = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', \
+             6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten', \
+            11: 'Eleven', 12: 'Twelve', 13: 'Thirteen', 14: 'Fourteen', \
+            15: 'Fifteen', 16: 'Sixteen', 17: 'Seventeen', 18: 'Eighteen', \
+            19: 'Nineteen', 20: 'Twenty', 30: 'Thirty', 40: 'Forty', \
+            50: 'Fifty', 60: 'Sixty', 70: 'Seventy', 80: 'Eighty', \
+            90: 'Ninety', 0: 'Zero'}
+
+def n2w(n):
+    try:
+        return num2words[n]
+    except KeyError:
+        try:
+            return num2words[n-n%10] + num2words[n%10].lower()
+        except KeyError:
+            print('Number out of range')
 
 class NavBar(Component):
     name = "NavBar"
@@ -7,7 +24,7 @@ class NavBar(Component):
     def item(props: dict):
 
         return """
-        <nav class="navbar navbar-expand-lg navColor">
+        <nav class="navbar sticky-top navbar-expand-lg navColor">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Sasen Perera</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,57 +65,36 @@ class NavBar(Component):
         </nav>
         """
 
-
 class Projects(Component):
     name = "Projects"
 
     def item(props: dict):
-
-        return """
-        <div id="projects">
-            <div class="project">
-                <h3>Lemon 🍋</h3>
-                <p>An Experimental Full-Stack Framework built with python (which btw is the framework used for the portfolio)</p>
-                <a href="https://github.com/Sas2k/Lemon">View on Github</a>
-                <a href="https://sas2k.github.io/Lemon/">View Docs</a>
+        projects_dict = loads(open("Components\projects.json", "r").read())["projects"]
+        projects = str()
+        x = 0
+        for j in projects_dict:
+            x += 1
+            projects += f"""
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading{n2w(x)}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{n2w(x)}" aria-expanded="true" aria-controls="flush-collapse{n2w(x)}">
+                {j["name"]}
+            </button>
+            </h2>
+            <div id="flush-collapse{n2w(x)}" class="accordion-collapse collapse" aria-labelledby="flush-heading{n2w(x)}" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>{j["description"]}</p>
+                    <a href="{j["github"]}">View on Github</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Zap! ⚡</h3>
-                <p>A lightweight HTTP Rest Client</p>
-                <a href="https://github.com/Sas2k/Zap">View on Github</a>
-            </div>
-            <div class="project">
-                <h3>Dis-Code 📩</h3>
-                <p>A Chat application that has a tendency to forget to decrypt the messages</p>
-                <p>Python Discord Code Jam 2022 Top 10</p>
-                <a href="https://github.com/Lucky-Leucrota/cj9-lucky-leucrota">View on Github</a>
-            </div>
-            <div class="project">
-                <h3>SongTrack 📀</h3>
-                <p>A music player that plays my favorite songs</p>
-                <a href="https://github.com/Sas2k/SongTrack">View on Github</a>
-                <a href="https://songtrack.vercel.app">View Deployment</a>
-            </div>
-            <div class="project">
-                <h3>Portfolio 📄</h3>
-                <p>My portfolio website</p>
-                <a href="https://github.com/Sas2k/portfolio">View on Github</a>
-                <a onclick="alert('you're already here!')">View Deployment</a>
-            </div>
-            <div class="project">
-                <h3>NumberScript 🔢</h3>
-                <p>Possibly the world's simplest and restricting programming language</p>
-                <a href="https://github.com/Sas2k/NumberScript">View on Github</a>
-            </div>
-            <div class="project">
-                <h3>Random-XKCder 💬</h3>
-                <p>A simple web app that displays a random XKCD comic</p>
-                <a href="https://github.com/Sas2k/random-xkcder">View on Github</a>
-                <a href="https://random-xkcder.vercel.app">View Deployment</a>
-            </div>
-        </div>
+        </div><br>
         """
 
+        return f"""
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                {projects}
+            </div>
+    """
 
 class SkillnTools(Component):
     name = "SkillnTools"

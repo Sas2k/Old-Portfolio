@@ -1,0 +1,35 @@
+{
+    "projects": 
+        [
+            {
+                "name": "Lemon &#127819;",
+                "description": "An Experimental Full-Stack Framework built with python (which btw is the framework used for the portfolio)",
+                "github": "https://github.com/Sas2k/Lemon"
+            },
+            {
+                "name": "Zap! &#x26a1;",
+                "description": "A lightweight HTTP Rest Client",
+                "github": "https://github.com/Sas2k/Zap"
+            }, 
+            {
+                "name": "Dis-Code &#x1F4E4;",
+                "description": "A Chat application that has a tendency to forget to decrypt the messages",
+                "github": "https://github.com/Lucky-Leucrota/cj9-lucky-leucrota"
+            },
+            {
+                "name": "SongTrack &#x1F4C0;",
+                "description": "A music player that plays my favorite songs",
+                "github": "https://github.com/Sas2k/SongTrack"
+            },
+            {
+                "name": "NumberScript &#x1F522;",
+                "description": "Possibly the world's simplest and restricting programming language",
+                "github": "https://github.com/Sas2k/NumberScript"
+            },
+            {
+                "name": "Random-XKCder &#x1f4ac;",
+                "description": "A simple web app that displays a random XKCD comic",
+                "github": "https://github.com/Sas2k/random-xkcder"
+            }
+        ]
+}

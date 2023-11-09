@@ -2,7 +2,7 @@ from Lemon.components import Component
 from Lemon.Server.server import Server
 from Lemon.ui.forms import FormControl
 
-from Components.components import NavBar, Projects, SkillnTools
+from Components.components import *
 
 import time
 

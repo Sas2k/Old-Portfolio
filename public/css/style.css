@@ -13,35 +13,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    margin: auto;
-    max-width: auto;
-}
-
-.project {
-    margin: auto;
-    max-width: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 300px;
-    background-color: rgb(231, 231, 231);
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-
 .navColor {
     background-color: rgb(236, 113, 13);
     color: white;

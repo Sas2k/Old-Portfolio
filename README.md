@@ -1,4 +1,4 @@
-<h1 align="center">Sas2k's Portfolio</h3>
+<h1 align="center">Sas2k's Old Portfolio</h3>
 
 <div align="center">
 
@@ -27,7 +27,7 @@ Hello, This is my portfolio. Feel Free to check it out!
 
 >The app is Deployed on Vercel!!
 
-https://portfolio-sas2k.vercel.app/
+https://sas2ks-old-portfolio.vercel.app/
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
